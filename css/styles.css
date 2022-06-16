@@ -756,6 +756,7 @@ img {
     height: 100%;
     background-color: var(--overlay-modal);
 
+    visibility: visible;
     opacity: 1;
     transition: opacity 250ms var(--timing-function);
 }
@@ -764,6 +765,7 @@ img {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+    transition: opacity 300ms, visibility 800ms linear 300ms;
 }
 
 .backdrop.is-hidden .modal {
